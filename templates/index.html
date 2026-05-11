@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Lighting Controller</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Smart Lighting Scene Controller</h1>
+    </header>
+
+    <section id="lights-section">
+        <h2>Connected Lights</h2>
+        <ul id="light-list"></ul>
+    </section>
+
+    <section id="scenes-section">
+        <h2>Customize Scenes</h2>
+
+        <div class="scene" id="scene-happy">
+            <h3>Happy</h3>
+            <div class="color-pickers" data-scene="happy"></div>
+            <button class="save-scene" data-scene="happy">Save</button>
+            <button class="trigger-scene" data-scene="happy">Trigger</button>
+        </div>
+
+        <div class="scene" id="scene-focus">
+            <h3>Focus</h3>
+            <div class="color-pickers" data-scene="focus"></div>
+            <button class="save-scene" data-scene="focus">Save</button>
+            <button class="trigger-scene" data-scene="focus">Trigger</button>
+        </div>
+
+        <div class="scene" id="scene-party">
+            <h3>Party</h3>
+            <div class="color-pickers" data-scene="party"></div>
+            <button class="save-scene" data-scene="party">Save</button>
+            <button class="trigger-scene" data-scene="party">Trigger</button>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

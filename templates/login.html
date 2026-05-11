@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Successful registration! Please login.
+<form method="post" class="form-login">
+            <div class="form-input">
+                <div class="input-field">
+                    <input name="email" type="text" placeholder="Username" required>
+                </div>
+            </div>
+            <div class="form-input">
+                <div class="input-field">
+                    <input name="password" type="password" placeholder="Password" required>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+{% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+</body>
+if you need to register click <a href = register>here </a>
+</html>
